@@ -1,6 +1,5 @@
 <template>
   <div>
-    <p>{{ currentYear }}</p>
     <ul>
       <li v-for="(member, i) in staff" :key="i">
         {{ member.name }}, {{ member.role }}
@@ -18,18 +17,13 @@ export default {
       required: true
     }
   },
+
   data () {
     return {
+    }
+  },
 
-    }
-  },
-  computed: {
-    currentYear () {
-      return this.$dayjs().format('YYYY')
-    }
-  },
   methods: {
-    // ...
   }
 }
 
