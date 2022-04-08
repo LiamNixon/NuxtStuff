@@ -1,13 +1,12 @@
 <template>
-  <div>
-    <p>{{ currentYear }}</p>
-
+  <div class="pl-8 pt-4">
     <addStaffMember @addStaffMember="addStaff" />
-
+    <br><br>
     <h3 class="font-bold underline">
       Staff list for Echelon Productions:
     </h3>
-
+    <p>{{ currentYear }}</p>
+    <br>
     <staffList :staff="staff" />
   </div>
 </template>
